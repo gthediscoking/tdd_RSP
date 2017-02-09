@@ -36,6 +36,6 @@ INCLUDE_DIRS =\
   mocks
 
 CPPUTEST_WARNINGFLAGS = -Wall -Werror -Wswitch-default
-CPPUTEST_WARNINGFLAGS += -Wconversion -Wswitch-enum
+CPPUTEST_WARNINGFLAGS += -Wconversion -Wswitch-enum -Wno-date-time
 
 include $(CPPUTEST_HOME)/build/MakefileWorker.mk
