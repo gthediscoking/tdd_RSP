@@ -9,29 +9,32 @@
 
 #define TRUE 1
 #define FAIL 0
+#define STR_LEN_MAX 256
+
+enum RSP
+{
+  STONE = 1,
+  SCISSORS,
+  PAPER
+};
 
 class Player
   {
   public:
     explicit Player();
     virtual ~Player();
-    int showHand(void);
+    Player(const char* p);
+    int  showHand(void);
     void notifyResult(bool result);
-    int getWinCount(void);
-
-    enum RSP
-    {
-      STONE = 1,
-      SCISSORS,
-      PAPER
-    };
+    int  getWinCount(void);
+    const char* getName(void);
 
   private:
     Player(const Player&);
     Player& operator=(const Player&);
 
-    char _name;
-    int  _winCount;
+    const char* _pName;
+    int   _winCount;
   };
 
 #endif  // D_Player_H

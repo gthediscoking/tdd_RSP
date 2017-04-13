@@ -31,6 +31,7 @@ INCLUDE_DIRS =\
   .\
   include \
   include/* \
+	/usr/include/c++/4.2.1/ \
   $(CPPUTEST_HOME)/include/ \
   $(CPPUTEST_HOME)/include/Platforms/Gcc\
   mocks

@@ -3,6 +3,7 @@
 *.lo
 *.o
 *.obj
+objs/*
 
 # Precompiled Headers
 *.gch
@@ -27,3 +28,6 @@
 *.exe
 *.out
 *.app
+
+helloworld
+test_tests
