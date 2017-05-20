@@ -1,12 +1,12 @@
 #include "Player.h"
-//#include <iostream>
+#include <iostream>
 
 // コンストラクタ
 Player::Player()
 {
     _pName = "No Name";
     _winCount = 0;
-    //std::cout << "プレイヤー「" << *_pName << "」が生成されました。" << std::endl;
+    // std::cout << "プレイヤー「" << *_pName << "」が生成されました。" << std::endl;
 }
 
 // 引数ありコンストラクタ

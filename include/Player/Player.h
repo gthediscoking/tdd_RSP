@@ -34,7 +34,7 @@ class Player
     Player& operator=(const Player&);
 
     const char* _pName;
-    int   _winCount;
+    int _winCount;
   };
 
 #endif  // D_Player_H

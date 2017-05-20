@@ -1,10 +1,10 @@
 #Set this to @ to keep the makefile quiet
-SILENCE = @
+# SILENCE = @
 
 #---- Outputs ----#
 COMPONENT_NAME = test
 #Set this to @ to keep the makefile quiet
-SILENCE = @
+# SILENCE = @
 
 #--- Inputs ----#
 PROJECT_HOME_DIR = .
@@ -18,7 +18,7 @@ SRC_DIRS = \
     src/*
 
 # to pick specific files (rather than directories) use this:
-SRC_FILES =
+SRC_FILES = helloworld.cpp
 
 TEST_SRC_DIRS = \
     tests \
