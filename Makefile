@@ -18,7 +18,9 @@ SRC_DIRS = \
     src/*
 
 # to pick specific files (rather than directories) use this:
-SRC_FILES = helloworld.cpp
+SRC_FILES =
+    # main.cpp \
+    # helloworld.cpp
 
 TEST_SRC_DIRS = \
     tests \

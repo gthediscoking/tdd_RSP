@@ -57,7 +57,7 @@ TEST(Player, StoneAlwaysShowed)
 {
   // じゃんけんの手は必ずグーを出す
   int hand = player->showHand();
-  CHECK_EQUAL(STONE, hand);
+  CHECK_EQUAL(ROCK, hand);
 }
 
 TEST(Player, getName)

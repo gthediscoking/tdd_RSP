@@ -13,7 +13,7 @@
 
 enum RSP
 {
-  STONE = 1,
+  ROCK = 1,
   SCISSORS,
   PAPER
 };
