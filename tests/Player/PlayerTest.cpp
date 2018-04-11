@@ -39,8 +39,10 @@ TEST(Player, CountUpAndDownWinCount)
   {
     player->notifyResult(TRUE);
   }
-  // count = player->getWinCount();
-  // CHECK_EQUAL(expected, count);
+
+  // winCountが買った回数だけ増えているか確認
+  count = player->getWinCount();
+  CHECK_EQUAL(NUM_OF_WIN, count);
 
   // 負けを重ねても、winCountは変化しない
   for(int i=0; i < NUM_OF_LOSE; i++)
@@ -48,7 +50,6 @@ TEST(Player, CountUpAndDownWinCount)
     player->notifyResult(FAIL);
   }
 
-  // winCountが買った回数だけ増えているか確認
   count = player->getWinCount();
   CHECK_EQUAL(NUM_OF_WIN, count);
 }
@@ -63,5 +64,6 @@ TEST(Player, StoneAlwaysShowed)
 TEST(Player, getName)
 {
   const char* pN = player->getName();
+  printf("プレイヤーの名前は「", *pN, "です。¥n");
   STRCMP_EQUAL(NAME, pN);
 }

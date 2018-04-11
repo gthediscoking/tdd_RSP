@@ -2,10 +2,10 @@
 //#include <iostream>
 
 // コンストラクタ
-Player::Player()
+Player::Player():_winCount(0)
 {
     _pName = "No Name";
-    _winCount = 0;
+    // _winCount = 0;
     // std::cout << "プレイヤー「" << *_pName << "」が生成されました。" << std::endl;
     printf("プレイヤー「%c」が生成されました。¥n", *_pName);
 }
