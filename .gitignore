@@ -4,6 +4,9 @@
 *.o
 *.obj
 
+# Depend
+*.d
+
 # Precompiled Headers
 *.gch
 *.pch
@@ -27,3 +30,4 @@
 *.exe
 *.out
 *.app
+test_tests

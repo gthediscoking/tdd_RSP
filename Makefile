@@ -37,5 +37,6 @@ INCLUDE_DIRS =\
 
 CPPUTEST_WARNINGFLAGS = -Wall -Werror -Wswitch-default
 CPPUTEST_WARNINGFLAGS += -Wconversion -Wswitch-enum
+CPPUTEST_CXX_WARNINGFLAGS=-fsized-deallocation
 
 include $(CPPUTEST_HOME)/build/MakefileWorker.mk
